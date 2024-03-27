@@ -62,6 +62,6 @@ This script will allow users to more easily playtest the upcoming revision to D&
 **Known Bugs:**
 - No known bugs at this time. Will update when any are found.
 
-**Script Content Source:** https://media.dndbeyond.com/compendium-images/ua/ph-playtest6/OJVW7QLuHjEFCCVs/UA-2023-PH-Playtest6.pdf
+**Script Content Source:** https://media.dndbeyond.com/compendium-images/ua/ph-playtest8/gHvtmY50loGLgQUb/UA2023-PH-Playtest8.pdf
 
 For instructions on how to add this script to the sheet, please see this page: https://www.flapkan.com/how-to/add-more-content
