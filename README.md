@@ -59,6 +59,10 @@ Almost all the content of this script is ripped directly from either "ListsGear.
 
 This script will allow users to more easily playtest the upcoming revision to D&D 5E.
 
+**Script Patch Notes:**
+- **2024-04-05:**
+  - Fixed the formatting for the start of each entry throughout the entire script, as I had incorrectly used ":" instead of "="; In other words, all of the entries started with *WeaponsList["club"] **:** {* instead of *WeaponsList["club"] **=** {*.
+
 **Known Bugs:**
 - No known bugs at this time. Will update when any are found.
 
