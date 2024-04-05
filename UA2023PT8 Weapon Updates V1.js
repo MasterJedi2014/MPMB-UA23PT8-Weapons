@@ -3,7 +3,7 @@
 	Effect:		This script adds the UA versions of the weapons from the 2023 Unearthed Arcana "Player's Handbook Playtest 7" article.
 				This file is almost entirely the work of MPMB; MasterJedi2014 has simply made alterations.
 	Code by:	MorePurpleMoreBetter's code, altered by MasterJedi2014
-	Date:		2024-03-27 (sheet v13.1.0)
+	Date:		2024-04-05 (sheet v13.1.0)
 */
 
 var iFileName = "UA2023PT8 Weapon Updates V1.js";
@@ -12,7 +12,7 @@ RequiredSheetVersion("13.1.0");
 SourceList["MJ:HB"] = {
 	name : "MasterJedi2014's Homebrew",
 	abbreviation : "MJ:HB",
-	date : "2024/03/27",
+	date : "2024/04/05",
 };
 
 SourceList["UA23PT8"] = {
@@ -23,7 +23,7 @@ SourceList["UA23PT8"] = {
 };
 
 // Alter Melee Simple Weapons
-WeaponsList["club"] : {
+WeaponsList["club"] = {
 	regExpSearch : /^(?!.*(great|heavy|big))(?=.*\b(club|bian|tonfa)s?\b).*$/i,
 	name : "Club",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -37,7 +37,7 @@ WeaponsList["club"] : {
 	abilitytodamage : true,
 	monkweapon : true
 };
-WeaponsList["dagger"] : {
+WeaponsList["dagger"] = {
 	regExpSearch : /dagger|bishou|\btamos?\b|kozuka|\btantos?\b/i,
 	name : "Dagger",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -51,7 +51,7 @@ WeaponsList["dagger"] : {
 	abilitytodamage : true,
 	monkweapon : true
 };
-WeaponsList["greatclub"] : {
+WeaponsList["greatclub"] = {
 	regExpSearch : /^(?=.*(great|heavy|big|weida))(?=.*(club|bian|tonfa)s?\b).*$|tetsubo/i,
 	name : "Greatclub",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -64,7 +64,7 @@ WeaponsList["greatclub"] : {
 	description : "Two-handed; Mstry: Push",
 	abilitytodamage : true
 };
-WeaponsList["handaxe"] : {
+WeaponsList["handaxe"] = {
 	regExpSearch : /^(?=.*(light|hand|short|small|throw))(?=.*(axe|\bfu)s?\b).*$|\bonos?\b/i,
 	name : "Handaxe",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -78,7 +78,7 @@ WeaponsList["handaxe"] : {
 	abilitytodamage : true,
 	monkweapon : true
 };
-WeaponsList["javelin"] : {
+WeaponsList["javelin"] = {
 	regExpSearch : /javelin|\bmaus?\b|uchi-ne/i,
 	name : "Javelin",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -92,7 +92,7 @@ WeaponsList["javelin"] : {
 	abilitytodamage : true,
 	monkweapon : true
 };
-WeaponsList["light hammer"] : {
+WeaponsList["light hammer"] = {
 	regExpSearch : /^(?=.*(light|hand|short|small|throw))(?=.*hammer).*$/i,
 	name : "Light hammer",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -106,7 +106,7 @@ WeaponsList["light hammer"] : {
 	abilitytodamage : true,
 	monkweapon : true
 };
-WeaponsList["mace"] : {
+WeaponsList["mace"] = {
 	regExpSearch : /maces?\b|\bchuis?\b|kanabo/i,
 	name : "Mace",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -120,7 +120,7 @@ WeaponsList["mace"] : {
 	monkweapon : true,
 	abilitytodamage : true
 };
-WeaponsList["quarterstaff"] : {
+WeaponsList["quarterstaff"] = {
 	regExpSearch : /quarterstaff|\bstaffs?\b|\bbos?\b|^gun(.?(\+|-)\d+)?$/i,
 	name : "Quarterstaff",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -134,7 +134,7 @@ WeaponsList["quarterstaff"] : {
 	monkweapon : true,
 	abilitytodamage : true
 };
-WeaponsList["sickle"] : {
+WeaponsList["sickle"] = {
 	regExpSearch : /sickle|\bkamas?\b/i,
 	name : "Sickle",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -148,7 +148,7 @@ WeaponsList["sickle"] : {
 	monkweapon : true,
 	abilitytodamage : true
 };
-WeaponsList["spear"] : {
+WeaponsList["spear"] = {
 	regExpSearch : /^(?!.*agonizing)(?!.*eldritch)(?=.*(spear|qiang|\byaris?\b)).*$/i,
 	name : "Spear",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -164,7 +164,7 @@ WeaponsList["spear"] : {
 };
 
 // Alter Ranged Simple Weapons
-WeaponsList["light crossbow"] : {
+WeaponsList["light crossbow"] = {
 	regExpSearch : /^(((?=.*light)(?=.*crossbow))|((?!.*(hand|short|great|heavy|bolt))(?=.*\bcrossbows?\b))).*$/i,
 	name : "Light crossbow",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -178,7 +178,7 @@ WeaponsList["light crossbow"] : {
 	abilitytodamage : true,
 	ammo : "bolt"
 };
-WeaponsList["dart"] : {
+WeaponsList["dart"] = {
 	regExpSearch : /dart|shuriken/i,
 	name : "Dart",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -191,7 +191,7 @@ WeaponsList["dart"] : {
 	description : "Finesse, thrown; Mstry: Vex",
 	abilitytodamage : true
 };
-WeaponsList["shortbow"] : {
+WeaponsList["shortbow"] = {
 	regExpSearch : /^(?!.*crossbow)(((?=.*short)(?=.*bow))|((?!.*(moon|long))(?=.*\bbows?\b))).*$|hankyus?/i,
 	name : "Shortbow",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -205,7 +205,7 @@ WeaponsList["shortbow"] : {
 	abilitytodamage : true,
 	ammo : "arrow"
 };
-WeaponsList["sling"] : {
+WeaponsList["sling"] = {
 	regExpSearch : /sling/i,
 	name : "Sling",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 21]],
@@ -221,7 +221,7 @@ WeaponsList["sling"] : {
 };
 
 // Alter Melee Martial Weapons
-WeaponsList["battleaxe"] : {
+WeaponsList["battleaxe"] = {
 	regExpSearch : /^(((?=.*battle)(?=.*(axe|\bono|\bfu)s?\b))|((?!.*(light|hand|short|small|great|heavy|throw))(?=.*\b(axe|fu|masakari)s?\b))).*$/i,
 	name : "Battleaxe",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -234,7 +234,7 @@ WeaponsList["battleaxe"] : {
 	description : "Versatile (1d10); Mstry: Topple",
 	abilitytodamage : true
 };
-WeaponsList["flail"] : {
+WeaponsList["flail"] = {
 	regExpSearch : /flail|nunchaku/i,
 	name : "Flail",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -247,7 +247,7 @@ WeaponsList["flail"] : {
 	description : "Mstry: Sap",
 	abilitytodamage : true
 };
-WeaponsList["glaive"] : {
+WeaponsList["glaive"] = {
 	regExpSearch : /glaive|guandao|bisento|naginata/i,
 	name : "Glaive",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -260,7 +260,7 @@ WeaponsList["glaive"] : {
 	description : "Heavy, reach, two-handed; Mstry: Graze",
 	abilitytodamage : true
 };
-WeaponsList["greataxe"] : {
+WeaponsList["greataxe"] = {
 	regExpSearch : /^(?=.*(great|heavy|weida))(?=.*(axe|\bono|\bfu|masakari)s?\b).*$/i,
 	name : "Greataxe",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -273,7 +273,7 @@ WeaponsList["greataxe"] : {
 	description : "Heavy, two-handed; Mstry: Cleave",
 	abilitytodamage : true
 };
-WeaponsList["greatsword"] : {
+WeaponsList["greatsword"] = {
 	regExpSearch : /^(?=.*(great|heavy))(?=.*sword).*$|changdao|nodachi/i,
 	name : "Greatsword",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -286,7 +286,7 @@ WeaponsList["greatsword"] : {
 	description : "Heavy, two-handed; Mstry: Graze",
 	abilitytodamage : true
 };
-WeaponsList["halberd"] : {
+WeaponsList["halberd"] = {
 	regExpSearch : /halberd|\bjis?\b|kamayari/i,
 	name : "Halberd",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -299,7 +299,7 @@ WeaponsList["halberd"] : {
 	description : "Heavy, reach, two-handed; Mstry: Cleave",
 	abilitytodamage : true
 };
-WeaponsList["lance"] : {
+WeaponsList["lance"] = {
 	regExpSearch : /lance|umayari/i,
 	name : "Lance",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -314,7 +314,7 @@ WeaponsList["lance"] : {
 	special : true,
 	abilitytodamage : true
 };
-WeaponsList["longsword"] : {
+WeaponsList["longsword"] = {
 	regExpSearch : /katana|\bjians?\b|^(((?=.*long)(?=.*sword))|((?!.*(burst|light|hand|short|small|great|heavy))(?=.*\bswords?\b))).*$/i,
 	name : "Longsword",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -327,7 +327,7 @@ WeaponsList["longsword"] : {
 	description : "Versatile (1d10); Mstry: Sap",
 	abilitytodamage : true
 };
-WeaponsList["maul"] : {
+WeaponsList["maul"] = {
 	regExpSearch : /^((?=.*maul)|((?=.*(great|heavy))(?=.*hammer))).*$/i,
 	name : "Maul",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -340,7 +340,7 @@ WeaponsList["maul"] : {
 	description : "Heavy, two-handed; Mstry: Topple",
 	abilitytodamage : true
 };
-WeaponsList["morningstar"] : {
+WeaponsList["morningstar"] = {
 	regExpSearch : /morningstar/i,
 	name : "Morningstar",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -353,7 +353,7 @@ WeaponsList["morningstar"] : {
 	description : "Mstry: Sap",
 	abilitytodamage : true
 };
-WeaponsList["pike"] : {
+WeaponsList["pike"] = {
 	regExpSearch : /^(?!.*armou?r)(?!.*\bspike)(?=.*(pike|\bmaos?\b|nagaeyari)).*$/i,
 	name : "Pike",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -366,7 +366,7 @@ WeaponsList["pike"] : {
 	description : "Heavy, reach, two-handed; Mstry: Push",
 	abilitytodamage : true
 };
-WeaponsList["rapier"] : {
+WeaponsList["rapier"] = {
 	regExpSearch : /rapier/i,
 	name : "Rapier",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -379,7 +379,7 @@ WeaponsList["rapier"] : {
 	description : "Finesse; Mstry: Vex",
 	abilitytodamage : true
 };
-WeaponsList["scimitar"] : {
+WeaponsList["scimitar"] = {
 	regExpSearch : /scimitar|liuyedao|wakizashi/i,
 	name : "Scimitar",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -392,7 +392,7 @@ WeaponsList["scimitar"] : {
 	description : "Finesse, light; Mstry: Nick",
 	abilitytodamage : true
 };
-WeaponsList["shortsword"] : {
+WeaponsList["shortsword"] = {
 	regExpSearch : /^(?=.*short)(?=.*sword).*$|shuangdao/i,
 	name : "Shortsword",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -406,7 +406,7 @@ WeaponsList["shortsword"] : {
 	abilitytodamage : true,
 	monkweapon : true
 };
-WeaponsList["trident"] : {
+WeaponsList["trident"] = {
 	regExpSearch : /trident|\bchas?\b|magariyari/i,
 	name : "Trident",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -419,7 +419,7 @@ WeaponsList["trident"] : {
 	description : "Thrown, versatile (1d10); Mstry: Topple",
 	abilitytodamage : true
 };
-WeaponsList["war pick"] : {
+WeaponsList["war pick"] = {
 	regExpSearch : /^(((?=.*pick)(?=.*war))|((?!.*(heavy|great|light))(?=.*\bpicks?\b))).*$|\bkuwas?\b/i,
 	name : "War pick",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -432,7 +432,7 @@ WeaponsList["war pick"] : {
 	description : "Versatile (1d10); Mstry: Sap",
 	abilitytodamage : true
 };
-WeaponsList["warhammer"] : {
+WeaponsList["warhammer"] = {
 	regExpSearch : /^(((?=.*hammer)(?=.*war))|((?!.*(light|hand|short|small|great|heavy|throw|maul))(?=.*\bhammers?\b))).*$/i,
 	name : "Warhammer",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -445,7 +445,7 @@ WeaponsList["warhammer"] : {
 	description : "Versatile (1d10); Mstry: Push",
 	abilitytodamage : true
 };
-WeaponsList["whip"] : {
+WeaponsList["whip"] = {
 	regExpSearch : /^(?!.*thorn)(?=.*whip).*$/i,
 	name : "Whip",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -460,7 +460,7 @@ WeaponsList["whip"] : {
 };
 
 // Alter Ranged Martial Weapons
-WeaponsList["blowgun"] : {
+WeaponsList["blowgun"] = {
 	regExpSearch : /blowgun/i,
 	name : "Blowgun",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -474,7 +474,7 @@ WeaponsList["blowgun"] : {
 	abilitytodamage : true,
 	ammo : "needle"
 };
-WeaponsList["hand crossbow"] : {
+WeaponsList["hand crossbow"] = {
 	regExpSearch : /^(?=.*hand)(?=.*crossbow).*$/i,
 	name : "Hand crossbow",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -488,7 +488,7 @@ WeaponsList["hand crossbow"] : {
 	abilitytodamage : true,
 	ammo : "bolt"
 };
-WeaponsList["heavy crossbow"] : {
+WeaponsList["heavy crossbow"] = {
 	regExpSearch : /^(?=.*(great|heavy))(?=.*crossbow).*$/i,
 	name : "Heavy crossbow",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -502,7 +502,7 @@ WeaponsList["heavy crossbow"] : {
 	abilitytodamage : true,
 	ammo : "bolt"
 };
-WeaponsList["longbow"] : {
+WeaponsList["longbow"] = {
 	regExpSearch : /^(?!.*crossbow)(?=.*long)(?=.*bow).*$|daikyu/i,
 	name : "Longbow",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
@@ -672,7 +672,7 @@ WeaponsList["laser rifle"] = {
 };
 
 // Alter Adventuring Gear: Net
-WeaponsList["net"] : {
+WeaponsList["net"] = {
 	regExpSearch : /\bnet(ting)?s?\b/i,
 	name : "Net",
 	source : [["SRD", 66], ["P", 149], ["UA23PT8", 24]],
