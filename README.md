@@ -4,7 +4,8 @@ This script adds code that implements the Weapon Mastery property from the 2023 
 **Script Credit Note:**
 This file has been made by MasterJedi2014, but consists almost entirely of code made by MorePurpleMoreBetter. The only code by me at this point is the code that alters the **Net**.
 
-# This file must be loaded in before any of the following scripts for the 2022-2023 One D&D/5.1E UA articles, otherwise the sheet runs into errors: "MPMB-UA23PT6-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT6-Content), "MPMB-UA23PT7-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT7-Content), "MPMB-UA23PT8-Content" (Link will go here once this script is complete).
+# This file must be loaded in before any of the following scripts for the 2022-2023 One D&D/5.1E UA articles, otherwise the sheet runs into errors:
+"MPMB-UA23PT6-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT6-Content), "MPMB-UA23PT7-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT7-Content), "MPMB-UA23PT8-Content" (Link will go here once this script is complete).
 
 **Detailed List of Weapon Changes:**
 - *Simple Weapons*
