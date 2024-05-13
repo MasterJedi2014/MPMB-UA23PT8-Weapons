@@ -1,8 +1,10 @@
 # MPMB-UA23PT8-Weapons
-Replaces the existing weapons with their updated versions in *Unearthed Arcana 2023: Player's Handbook Playtest 6*. This is being kept seperate from the main *UA23PT8* content script so that others can decide if they want to opt in or out of using these weapon updates.
+This script adds code that implements the Weapon Mastery property from the 2023 Unearthed Arcana "Player's Handbook Playtest 8" article.
 
 **Script Credit Note:**
-Almost all the content of this script is ripped directly from either "ListsGear.js" or "all_WotC_pub+UA.js" by MPMB and others. All I have done is alter the code so that the weapons match up with *UA23PT8*.
+This file has been made by MasterJedi2014, but consists almost entirely of code made by MorePurpleMoreBetter. The only code by me at this point is the code that alters the **Net**.
+
+# This file must be loaded in before any of the following scripts for the 2022-2023 One D&D/5.1E UA articles, otherwise the sheet runs into errors: "MPMB-UA23PT6-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT6-Content), "MPMB-UA23PT7-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT7-Content), "MPMB-UA23PT8-Content" (Link will go here once this script is complete).
 
 **Detailed List of Weapon Changes:**
 - *Simple Weapons*
@@ -62,6 +64,8 @@ This script will allow users to more easily playtest the upcoming revision to D&
 **Script Patch Notes:**
 - **2024-04-05:**
   - Fixed the formatting for the start of each entry throughout the entire script, as I had incorrectly used ":" instead of "="; In other words, all of the entries started with *WeaponsList["name"] **:** {* instead of *WeaponsList["name"] **=** {*.
+- **2024-05-13:**
+  - Replaced the entire script with a new one composed of code made by user "Joost/MorePurpleMoreBetter".
 
 **Known Bugs:**
 - No known bugs at this time. Will update when any are found.
