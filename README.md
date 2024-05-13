@@ -2,7 +2,7 @@
 This script adds code that implements the Weapon Mastery property from the 2023 Unearthed Arcana "Player's Handbook Playtest 8" article.
 
 **Script Credit Note:**
-This file has been made by MasterJedi2014, but consists almost entirely of code made by MorePurpleMoreBetter. The only code by me at this point is the code that alters the **Net**.
+This file has been made by MasterJedi2014, but consists almost entirely of code made by MorePurpleMoreBetter. The only code by me at this point is the code that alters the **Trident**, **Pistol**, **Musket**, & **Net**.
 
 # This file must be loaded in before any of the following scripts for the 2022-2023 One D&D/5.1E UA articles, otherwise the sheet runs into errors:
 - "MPMB-UA23PT6-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT6-Content)
@@ -51,7 +51,7 @@ This file has been made by MasterJedi2014, but consists almost entirely of code 
   - **Musket**: Slow
   - **Pistol**: Vex
   - Musket & Pistol are no longer excluded by default, since *UA23PT8* includes them
-  - Though *UA23PT8* doesn't list them, the Modern firearms and Future weapons are included in this script, with the script author making educated guesses about what Mastery Property each of the below firearms/weapons will be given. The author is personally of the opinion that the Hunting Rifle, Shotgun, and Antimatter Rifle should have a modified version of the Cleave Property, but the Cleave Property can only be applied to a Melee Weapon according to *UA23PT8*, so I have not given that property to those weapons.
+  - Though *UA23PT8* doesn't list them, the Modern firearms and Future weapons are included in this script, with MasterJedi2014 making educated guesses about what Mastery Property each of the below firearms/weapons will be given, and Joost/MPMB implementing those guesses. MasterJedi2014 is personally of the opinion that the Hunting Rifle, Shotgun, and Antimatter Rifle should have a modified version of the Cleave Property, but the Cleave Property can only be applied to a Melee Weapon according to *UA23PT8*, so myself & Joost/MPMB did not give that property to those weapons.
     - **Pistol, Automatic**: Vex
     - **Revolver**: Vex
     - **Hunting Rifle**: Slow
@@ -68,7 +68,7 @@ This script will allow users to more easily playtest the upcoming revision to D&
 - **2024-04-05:**
   - Fixed the formatting for the start of each entry throughout the entire script, as I had incorrectly used ":" instead of "="; In other words, all of the entries started with *WeaponsList["name"] **:** {* instead of *WeaponsList["name"] **=** {*.
 - **2024-05-13:**
-  - Replaced the entire script with a new one composed of code made by user "Joost/MorePurpleMoreBetter".
+  - Replaced the entire script with a new one composed of code almost entirely made by user "Joost/MorePurpleMoreBetter". The only code by me at this point is the code that alters the **Trident**, **Pistol**, **Musket**, & **Net**.
 
 **Known Bugs:**
 - No known bugs at this time. Will update when any are found.
