@@ -1,7 +1,7 @@
 /*	-INFORMATION-
 	Subject:	Weapon Mastery Functions
 	Effect:		This script adds code that implements the Weapon Mastery property from the 2023 Unearthed Arcana "Player's Handbook Playtest 8" article.
-				This file has been made by MasterJedi2014, but consists almost entirely of code made by MorePurpleMoreBetter. The only code by me at this point is the code that alters the Net.
+				This file has been made by MasterJedi2014, but consists almost entirely of code made by MorePurpleMoreBetter. The only code by me at this point is the code that alters the Trident, Pistol, Musket, & the Net.
 	Code by:	MorePurpleMoreBetter
 	Date:		2024-05-13 (sheet v13.1.0)
 */
@@ -93,6 +93,51 @@ masteryFunctions = {
     },
     'Weapons with the word "Mastery" will have any extra Mastery properties that they qualify for appended to their descriptions.'
   ]
+};
+
+// Alter Trident
+WeaponsList["trident"] = {
+	regExpSearch : /trident|\bchas?\b|magariyari/i,
+	name : "Trident",
+	source : [["SRD", 66], ["P", 149], ["UA23PT8", 22]],
+	list : "melee",
+	ability : 1,
+	type : "Martial",
+	damage : [1, 8, "piercing"],
+	range : "Melee, 20/60 ft",
+	weight : 4,
+	description : "Thrown, versatile (1d10)",
+	abilitytodamage : true
+};
+
+// Alter Ranged Martial Firearms
+WeaponsList["pistol"] = {
+	regExpSearch : /^(?=.*pistol)(?!.*automatic).*$/i,
+	name : "Pistol",
+	source : [["D", 268], ["UA23PT8", 22]],
+	list : "firearm",
+	ability : 2,
+	type : "Martial",
+	damage : [1, 10, "piercing"],
+	range : "30/90 ft",
+	weight : 3,
+	description : "Ammunition, loading",
+	abilitytodamage : true,
+	ammo : "renaissance bullet",
+};
+WeaponsList["musket"] = {
+	regExpSearch : /musket/i,
+	name : "Musket",
+	source : [["D", 268], ["UA23PT8", 22]],
+	list : "firearm",
+	ability : 2,
+	type : "Martial",
+	damage : [1, 12, "piercing"],
+	range : "40/120 ft",
+	weight : 10,
+	description : "Ammunition, loading",
+	abilitytodamage : true,
+	ammo : "renaissance bullet",
 };
 
 // Alter Adventuring Gear: Net
