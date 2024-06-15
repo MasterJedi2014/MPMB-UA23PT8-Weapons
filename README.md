@@ -7,7 +7,7 @@ This file has been made by MasterJedi2014, but consists almost entirely of code 
 # This file must be loaded in before any of the following scripts for the 2022-2023 One D&D/5.1E UA articles, otherwise the sheet runs into errors:
 - "MPMB-UA23PT6-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT6-Content)
 - "MPMB-UA23PT7-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT7-Content)
-- "MPMB-UA23PT8-Content" (Link will go here once this script is complete)
+- "MPMB-UA23PT8-Content" (https://github.com/MasterJedi2014/MPMB-UA23PT8-Content)
 
 **Detailed List of Weapon Changes:**
 - *Simple Weapons*
